@@ -1,0 +1,5 @@
+package kr.inhatc.spring.test.dto;
+
+public class TestDto {
+
+}

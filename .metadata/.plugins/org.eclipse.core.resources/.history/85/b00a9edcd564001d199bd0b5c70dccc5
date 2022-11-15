@@ -1,0 +1,12 @@
+package kr.inhatc.spring.test.controller;
+
+public class TestController {
+	
+	@RequestMapping(value="/")
+	public String hello() {
+		
+		return "Hello World";
+		
+	}//end of hello
+
+}//end of class

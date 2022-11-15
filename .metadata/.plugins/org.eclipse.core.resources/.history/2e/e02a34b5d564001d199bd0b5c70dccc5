@@ -1,0 +1,11 @@
+package kr.inhatc.spring.test.controller;
+
+public class TestController {
+	
+	public String hello() {
+		
+		return "안녕하세요";
+		
+	}//end of hello
+
+}//end of class

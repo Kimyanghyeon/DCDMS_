@@ -1,0 +1,8 @@
+package kr.inhatc.spring.test.dto;
+
+public class TestDto {
+	
+	private String name;
+	private int age;
+
+}//end of class

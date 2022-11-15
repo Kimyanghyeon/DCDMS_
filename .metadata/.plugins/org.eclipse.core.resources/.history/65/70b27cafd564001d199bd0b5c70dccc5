@@ -1,0 +1,9 @@
+package kr.inhatc.spring.test.controller;
+
+public class TestController {
+	
+	public String hello() {
+		
+	}//end of hello
+
+}//end of class
