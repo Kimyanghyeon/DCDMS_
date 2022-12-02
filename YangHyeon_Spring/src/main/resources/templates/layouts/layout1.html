@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" 
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    
+    <!-- 나중에 부를수록 우선 순위 높음 -->
+   <link th:href="@{/css/itemDtl_css.css}" rel="stylesheet">
+   	<link th:href="@{/css/boardForm_css.css}" rel="stylesheet">
+  	<link th:href="@{/css/main_css.css}" rel="stylesheet">
+   	<link th:href="@{/css/login_css.css}" rel="stylesheet">
+   	
+    <link th:href="@{/css/footer_css.css}" rel="stylesheet">
+    <link th:href="@{/css/header_css.css}" rel="stylesheet">
+
+    <link th:href="@{/css/layout1.css}" rel="stylesheet">
+    
+    <th:block layout:fragment="script"></th:block>
+    <th:block layout:fragment="css"></th:block>
+
+</head>
+<body>
+    <div th:replace="fragments/header::header"></div>   
+    <div layout:fragment="content" class="content">
+
+    </div>   
+    <div th:replace="fragments/footer::footer"></div>   
+</body>
+</html>

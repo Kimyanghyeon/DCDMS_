@@ -1,0 +1,85 @@
+@charset "UTF-8";
+@font-face {
+	/* 제목  */
+    font-family: 'IBMPlexSansKR-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	/* 소제목  */
+    font-family: 'IBMPlexSansKR-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	/* 내용  */
+    font-family: 'IBMPlexSansKR-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+
+	/*
+		.클래스 이름
+		#아이디 이름
+	*/
+    font-family: 'IBMPlexSansKR-Light';
+
+}/*end of all*/
+ul{
+    clear:both; 
+    padding-left: 0px;
+}
+
+.itemDetail{
+    display: flex;
+    max-width: 1550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #efefef;
+    padding: 20px;
+    text-align:center;
+    margin-top:100px;
+}
+.fileForm{
+    width: 600px;
+    height: 450px;
+     
+}
+.itemInfo{
+    padding: 10px;
+    width: 400px;
+    flex-grow: 1;
+}
+.itemInfo_sub{
+   border-bottom: 2px solid black;
+   display: inline-block;
+   width: 100%;
+   float: right;
+   font-size: 12px;
+}
+
+.itemTitle{
+    font-family: 'IBMPlexSansKR-Medium';
+    margin-bottom: 10px;
+    font-size: 15px;
+
+}
+.itemInfo_sub_list li{
+    list-style-type: none;
+    float: left;
+    padding-left: 10px;
+    
+}
+
+.getItemContents{
+    margin-top: 40px;
+    height: 360px;
+    overflow-y: scroll;
+}
+
+
+

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@font-face {
+	/* 제목  */
+    font-family: 'IBMPlexSansKR-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	/* 소제목  */
+    font-family: 'IBMPlexSansKR-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	/* 내용  */
+    font-family: 'IBMPlexSansKR-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+
+	/*
+		.클래스 이름
+		#아이디 이름
+	*/
+
+    font-family: 'IBMPlexSansKR-Light';
+	
+}/*end of all*/
+
+h1{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.boardForm{
+    width: 100%;
+    text-align: center;
+    margin-top:100px;
+}
+
+
+.upload_title{
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    font-family: 'IBMPlexSansKR-Medium';
+}
+
+.upLoadSubmit{
+    width: 100px;
+    color: #FFF !important;
+    background: #003366;
+    
+    cursor: pointer;
+    
+    border: 0;
+   	border-radius: 3px;
+    margin-bottom: 5px;
+    
+    padding:10px;
+}
+
+.upLoadSubmit:hover {
+    background: #666 url("icon/pattern_12.png");
+}
+
+.input{
+    max-width: 1550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+    background-color: #efefef;
+    padding: 20px 0;
+}
+
+.fieldRadio{
+	 display: inline-block;
+}
+
+
+
+
+

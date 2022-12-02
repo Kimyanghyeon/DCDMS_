@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" 
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layouts/layout1}">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div class="login" layout:fragment="content">
+		<div class="login_title">
+			<img src="/css/img/bul_h1.png" width="20px">
+			<h1>로그인</h1>
+		</div>
+		
+		<form role="form" method="post" action="/member/login">
+			<div class="loginInput">
+				<div class="_inputArea">
+					<input title="아이디" type="text" id="inputUserId" name="id" class="_input" placeholder="아이디">
+				</div>
+				
+				<div class="_inputArea">
+					<input title="비밀번호" type="password" id="inputUserPwd" name="pw" class="_input" placeholder="비밀번호" autocomplete="off">
+				</div>
+				
+				
+				
+				<p th:if="${loginErrorMsg}" class="error" th:text="${loginErrorMsg}"></p>
+				<button type="button" class="loginReset" onclick="location.href='/member/new'">회원가입</button>
+				<button  type="submit" class="loginSubmit">로그인</button>
+				<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+			</div>
+		</form>
+			
+
+	</div>
+</body>
+</html>

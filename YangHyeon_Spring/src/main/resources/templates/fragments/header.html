@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link th:href="@{./css/login_css.css}" rel="stylesheet">
+    <link th:href="@{./css/footer_css.css}" rel="stylesheet">
+    <link th:href="@{./css/header_css.css}" rel="stylesheet">
+	<title>Department Capstone Design Management System</title>
+
+	<th:block layout:fragment="script"></th:block>
+	<th:block layout:fragment="css"></th:block>
+
+</head>
+
+<body>
+	<div class="header" th:fragment="header">
+		<div class="container">
+
+			<div class="head_logo">
+				<img src="/css/img/logo_w.png" alt="인하공업전문대학교" class="logo" onclick="goSchoolLink()">
+				<h1 id="departTitle" onclick="goDepartLink()">컴퓨터 시스템과</h1>
+				<span><a href="/" class="goMain">캡스톤 디자인</a></span>
+				<script src="/js/header_js.js"></script>
+			</div>
+
+			<div class="head_navi" id="head_navi">
+				<nav id="menuUItop" class="menuUItop ">
+					<div class="top_div div_1">
+						<div class="top_k2wiz_GNB _wizOdr ul_1 have count6">
+
+							<!-- 로그인 -->
+							<li class="li_login"><a href="/member/login" id="login_menu"
+									class="login_menu" aria-current="page" sec:authorize="isAnonymous()">로그인
+									</a></li>
+							<li class="li_login"><a href="/member/logout" id="login_menu"
+									class="login_menu" aria-current="page" sec:authorize="isAuthenticated()">로그아웃
+									</a></li>		
+
+
+							<li class="li_1_2183 li_1 have _1st _even eQ01 _useChildDiv haveOpen" sec:authorize="hasAnyAuthority('ROLE_STUDENT')">
+								<a href="/cse/2189/subview.do" id="top_k2wiz_GNB_2183"
+									class="top_k2wiz_GNB_2183 a_1 k2wiz_GNB_919" target="_self">MY PAGE
+								</a>
+								<div class="top_div_2183 div_2 _childDiv">
+									<div class="div_2_inner">
+										<ul class="top_k2wiz_GNB_ul_2183 _wizOdr ul_2 count5">
+											<li class="li_2_2189 li_2 _1st _even"><a href="/student/item/new"
+													id="top_k2wiz_GNB_2189"
+													class="top_k2wiz_GNB_2189 a_2 k2wiz_GNB_2183" target="_self">
+													캡스톤 등록  </a></li>
+										</ul>
+									</div>
+									<span class="navGab"></span>
+								</div>
+							</li>
+							<li class="li_1_2185 li_1 have _even _3rd eQ03 _useChildDiv">
+								<a href="/cse/2201/subview.do" id="top_k2wiz_GNB_2185"
+									class="top_k2wiz_GNB_2185 a_1 k2wiz_GNB_919" target="_self">2022
+								</a>
+								<div class="top_div_2185 div_2 _childDiv">
+									<div class="div_2_inner">
+										<ul class="top_k2wiz_GNB_ul_2185 _wizOdr ul_2 count3">
+											<li class="li_2_2201 li_2 _1st _even"><a href="http://localhost/0?searchDateType=all&searchLanguageType=JAVA&searchBy=itemTitle&searchQuery="
+													id="top_k2wiz_GNB_2201"
+													class="top_k2wiz_GNB_2201 a_2 k2wiz_GNB_2185" target="_self">
+													JAVA </a></li>
+											<li class="li_2_2203 li_2 _odd _2nd"><a href="http://localhost/0?searchDateType=all&searchLanguageType=C1&searchBy=itemTitle&searchQuery="
+													id="top_k2wiz_GNB_2203"
+													class="top_k2wiz_GNB_2203 a_2 k2wiz_GNB_2185" target="_self">
+													C , C++ , C# </a></li>
+											<li class="li_2_2204 li_2 _last _even _3rd"><a href="http://localhost/0?searchDateType=all&searchLanguageType=PYTHON&searchBy=itemTitle&searchQuery="
+													id="top_k2wiz_GNB_2204"
+													class="top_k2wiz_GNB_2204 a_2 k2wiz_GNB_2185" target="_self">
+													Python </a></li>
+											<li class="li_2_2204 li_2 _odd_4th"><a href="http://localhost/0?searchDateType=all&searchLanguageType=MOBILE&searchBy=itemTitle&searchQuery="
+													id="top_k2wiz_GNB_2204"
+													class="top_k2wiz_GNB_2204 a_2 k2wiz_GNB_2185" target="_self">
+													Mobile </a></li>
+											<li class="li_2_2204 li_2 _even_4th"><a href="http://localhost/0?searchDateType=all&searchLanguageType=ETC&searchBy=itemTitle&searchQuery="
+													id="top_k2wiz_GNB_2204"
+													class="top_k2wiz_GNB_2204 a_2 k2wiz_GNB_2185" target="_self">
+													ETC </a></li>
+										</ul>
+									</div>
+									<span class="navGab"></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+
+				<div class="btn_mgnb_close on">
+					<button type="button" title="닫기">메뉴닫기</button>
+				</div>
+			</div>
+
+			<div class="head_util">
+				<ul>
+					<li class="btn_search">
+						<button type="button" class="openSearch" >통합검색</button>
+						<div class="wrap_search" id="wrap_search">
+							<div class="container">
+								<h3>통합검색</h3>
+								<div>
+									<form name="srchFrm" method="post"
+										action="https://search.inhatc.ac.kr/RSA/front/Search.jsp" target="_blank"
+										rel="noreferrer" title="통합검색(새창열림)">
+										<input type="text" name="qt" id="search_text" placeholder="검색어를 입력하세요"
+											title="검색어"> <input type="submit" title="검색" value="검색">
+										<div id="searchTextDiv" class="_formCheck" style="display: none;">
+											<span class="_err" style="font-size: 15px;">검색어를
+												입력해주세요.</span>
+										</div>
+									</form>
+								</div>
+								<dl>
+									<dt>인기 검색어</dt>
+									<dd id="_searchApiBody">
+										<span>웹</span> <span>모바일</span> <span>임베디드 시스템</span> <span>스프링</span>
+										<span>IoT</span> <span>기술서</span>
+									</dd>
+								</dl>
+								<button type="button" class="closeSearch" title="닫기" >통합검색 창
+                                    닫기</button>
+							</div>
+						</div>
+					</li>
+					<li class="btn_menu">
+						<button type="button" class="btn_mgnb" title="열기">전체 메뉴</button>
+					</li>
+				</ul>
+			</div>
+			<script src="/js/global.js"></script>
+			<script src="/js/nav_single.js"></script>
+		</div>
+		
+	</div>
+</body>
+
+
+</html>

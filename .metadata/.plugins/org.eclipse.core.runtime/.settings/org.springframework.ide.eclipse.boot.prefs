@@ -1,10 +1,12 @@
 eclipse.preferences.version=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.devtools=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.lombok=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.thymeleaf=1
-org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=1
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jpa=2
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.devtools=4
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.lombok=4
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.mysql=2
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.thymeleaf=4
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=4
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=YangHyeon_Spring
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=2.7.5
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=3.0.0
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=\uCEF4\uD4E8\uD130 \uC2DC\uC2A4\uD15C\uACFC \uCEA1\uC2A4\uD1A4 \uAD00\uB9AC \uC2DC\uC2A4\uD15C
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.groupId=kr.inhatc.spring
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=17

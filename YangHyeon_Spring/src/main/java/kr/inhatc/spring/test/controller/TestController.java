@@ -8,7 +8,7 @@ import kr.inhatc.spring.test.dto.TestDto;
 @RestController
 public class TestController {
 	
-	@GetMapping(value="/")
+	@GetMapping(value="/hello")
 	public String hello() {
 		
 		return "Hello World";

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@font-face {
+	/* 제목  */
+    font-family: 'IBMPlexSansKR-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	/* 소제목  */
+    font-family: 'IBMPlexSansKR-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	/* 내용  */
+    font-family: 'IBMPlexSansKR-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+
+	/*
+		.클래스 이름
+		#아이디 이름
+	*/
+    font-family: 'IBMPlexSansKR-Light';
+
+}/*end of all*/
+
+.footer {
+    background: #242b41;
+    padding: 30px 0 60px 0;
+    position: relative;
+}
+
+.container {
+    
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot_logo,.foot_address{
+    width: 100%;
+    text-align: center;
+
+}
+
+#logo{
+    width: 150px;
+}
+
+.foot_address {
+    margin: 20px 0;
+    font-size: 15px;
+    color: rgba(255,255,255,0.6);
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+
+
+
+
+
+

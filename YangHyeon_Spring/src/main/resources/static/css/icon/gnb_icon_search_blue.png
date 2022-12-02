@@ -1,0 +1,234 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	
+
+<!DOCTYPE HTML>
+<!--[if lt IE 7 ]><html dir="ltr" lang="ko" class="_mngr no-js ie ie6 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 7 ]><html dir="ltr" lang="ko" class="_mngr no-js ie ie7 lte7 lte8 lte9"><![endif]--> 
+<!--[if IE 8 ]><html dir="ltr" lang="ko" class="_mngr no-js ie ie8 lte8 lte9"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="ko" class="_mngr no-js ie ie9 lte9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html dir="ltr" lang="ko" class="_mngr no-js"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title>
+		인하공업전문대학
+	</title>
+	<meta property="og:url" content="https://www.inhatc.ac.kr/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="인하공업전문대학">
+	<meta property="og:description" content="인하공업전문대학">
+	<meta property="og:image" content="https://www.inhatc.ac.kr/sites/kr/images/common/logo_b.png">
+	<meta name="generator" content="INHATC"> 
+
+
+	<!-- 공통 js/css -->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+	<!-- ///// 공통 js/css /////////////////////////////////////////////////////////////////////////////////////// -->
+	
+	
+
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+
+	
+	<script src="/Web-home/js/jquery-1.9.1.min.js"></script>
+	<script src="/Web-home/js/jquery-ui-1.11.0.js"></script>
+	<script src="/Web-home/plugin/simplemodal/js/jquery.simplemodal-1.4.4.js"></script>
+	
+	<script src="/Web-home/js/jquery.blockUI.js"></script>
+	<script>
+		var urlPattern = ".do";
+		var defaultTextSiteId = "";
+		var ctxPath = "";
+	</script>
+	<script src="/Web-home/js/common.js"></script>
+	
+	<script src="/Web-home/_UI/js/_lib/modernizr.min.js"></script>
+	<script src="/Web-home/_UI/js/_lib/jquery.mCustomScrollbar.js"></script>
+	
+	
+	<link rel="stylesheet" href="/Web-home/_UI/css/common/mCustomScrollbar.css">
+	<link rel="stylesheet" href="/Web-home/_UI/css/guide/responsive.css">
+	
+
+
+	<script src="/Web-home/js/jquery-migrate-1.2.1.js"></script>
+	
+	
+	<script src="/Web-home/plugin/jstree/jstree.js"></script>
+	
+	
+	<script src="/Web-home/_UI/js/common/common.js"></script>
+	<script src="/Web-home/_UI/js/_lib/jquery.selectBoxIt.js"></script>
+	<script src="/Web-home/_UI/js/_lib/jquery.bxslider.js"></script>
+	<script src="/Web-home/_UI/js/_lib/jquery.jshowoff.js"></script>
+	<script src="/Web-home/_UI/js/_lib/jquery.sliderkit.js"></script>
+	<script src="/Web-home/_UI/js/_lib/jquery.dataTables.js"></script>
+	<script src="/Web-home/_UI/js/_lib/masonry.pkgd.js"></script>
+	<script src="/Web-home/_UI/js/_lib/jquery.nyroModal.js"></script>
+	<script src="/Web-home/_UI/js/_lib/jquery-linedtextarea.js"></script>
+	<script src="/Web-home/_UI/js/common/modalSize.js"></script>
+	<script src="/Web-home/_UI/js/guide/textEditor.js"></script>
+	
+	
+	<link rel="stylesheet" href="/Web-home/_UI/css/common/jquery-ui.css">
+	<link rel="stylesheet" href="/Web-home/plugin/jstree/themes/default/style.css">
+	
+	
+	
+	<link rel="stylesheet" href="/Web-home/_UI/css/common/common.css">
+	<!-- ///// 공통 js/css /////////////////////////////////////////////////////////////////////////////////////// -->
+
+	<script>
+		$(document).ready(function() {
+			$("._selectDesktop").click(function() {
+				$("#_modeVer").text("Desktop");
+			});
+			$("._selectTablet").click(function() {
+				$("#_modeVer").text("Tablet");
+			});
+			$("._selectMobile").click(function() {
+				$("#_modeVer").text("Mobile");
+			});
+		});
+	</script>
+	
+
+	
+	<link media="only screen and (max-width: 380px)" href="/Web-home/_UI/css/guide/responsiveMobile.css" rel="stylesheet">
+	<link media="only screen and (min-width: 381px) and (max-width: 768px)" href="/Web-home/_UI/css/guide/responsiveTablet.css" rel="stylesheet">
+	<link media="only screen and (min-width: 769px)" href="/Web-home/_UI/css/guide/responsiveDesktop.css" rel="stylesheet">
+
+	<!-- 개설 관리자 -->
+	<script src="/Web-home/_UI/js/siteMngr/basic/commonSiteMngr.js"></script>
+	
+	<link rel="stylesheet" href="/Web-home/_UI/css/siteMngr/modeMngr.css">
+	
+	<link media="only screen and (max-width: 380px)" href="/Web-home/_UI/css/siteMngr/modeEditMobile.css" rel="stylesheet">
+	<link media="only screen and (min-width: 381px) and (max-width: 768px)" href="/Web-home/_UI/css/siteMngr/modeEditTablet.css" rel="stylesheet">
+	<link media="only screen and (min-width: 769px)" href="/Web-home/_UI/css/siteMngr/modeEditDesktop.css" rel="stylesheet">
+	
+	<script>
+		function adjustStyle(width) {
+			width = parseInt(width);
+			if ((width < 380)) {/*mobile*/
+				$("body").removeClass("Desktop");
+				$("body").removeClass("Tablet");
+				$("body").addClass("Mobile");
+				$("#_modeVer").text("Mobile");
+			} else if ((width >= 381) && (width <= 768)) {/*Tablet*/
+				$("body").removeClass("Desktop");
+				$("body").addClass("Tablet");
+				$("body").removeClass("Mobile");
+				$("#_modeVer").text("Tablet");
+			} else if ((width > 769)) {/*Desktop*/
+				$("body").addClass("Desktop");
+				$("body").removeClass("Tablet");
+				$("body").removeClass("Mobile");
+				$("#_modeVer").text("Desktop");
+				$("#_articleFrame").addClass("Desktop");
+				$("#_articleFrame").removeClass("Tablet");
+				$("#_articleFrame").removeClass("Mobile");
+				$("#_responsiveTool ul li ._selectDesktop").addClass("_on");
+				$("#_responsiveTool ul li ._selectTablet").removeClass("_on");
+				$("#_responsiveTool ul li ._selectMobile").removeClass("_on");
+			}
+		}
+		$(function() {
+			adjustStyle($(this).width());
+			$(window).resize(function() {
+				adjustStyle($(this).width());
+			});
+		});
+	</script>
+
+	<script>
+	function jf_historyback() {
+		history.back();
+		return false;
+	}
+	</script>
+	
+</head>
+<body class="_message">
+	<div class="_messageOverlay">
+		<div class="_msgWrap _result">
+			<div class="_inner">
+				<div class="_message">
+					<h2>Inform. 
+						
+					</h2>
+					<p>	
+						I can not find the page you want. 
+						
+					</p>
+				</div><!-- END class="_message" -->
+				<div class="_areaButton">
+					<div class="_center">
+						<span class="_button _large _active">
+							
+							<input type="button" value="Confirm" onclick="jf_historyback();" />
+						</span>
+					</div>
+				</div><!-- END class="_areaButton" -->
+			</div><!-- END class="_inner" -->
+		</div><!-- END class="_msgWrap _result" -->
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" 
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout1}">
+
+<div layout:fragment="content">
+	<input type="hidden" id="itemId" th:value="${item.id}">
+	<div class="itemDetail">
+		<div th:each="itemImg : ${item.itemImgDtoList}">
+			<iframe  th:src="${itemImg.imgUrl}" class="fileForm" th:alt="${item.itemTitle}"></iframe>
+		</div>
+		
+		<div class="itemInfo">
+			<span class="itemTitle" th:text="${item.itemTitle}"></span>
+			<div class="list">
+				<div class="itemInfo_sub">
+					<ul class="itemInfo_sub_list">
+						<li th:text="${item.itemField}"></li>
+						<li th:text="${item.createdBy}"></li>
+						<li th:text="${item.regTime}"></li>
+					</ul>	
+				</div>
+			</div>
+			<div class="getItemContents">
+				<span class="itemContents" th:text="${item.itemContents}"></span>
+			</div>
+		</div>
+		
+	</div>
+</div> 
+
+</html>

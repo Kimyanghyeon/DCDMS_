@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@font-face {
+	/* 제목  */
+    font-family: 'IBMPlexSansKR-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	/* 소제목  */
+    font-family: 'IBMPlexSansKR-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	/* 내용  */
+    font-family: 'IBMPlexSansKR-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+
+	/*
+		.클래스 이름
+		#아이디 이름
+	*/
+
+	font-family: 'IBMPlexSansKR-Light';
+	font-size: 10px;
+
+}/*end of all*/
+
+input{
+	height:20px;
+}
+
+.login{
+    max-width: 1550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+    background-color: #efefef;
+    padding: 50px 0;
+    text-align:center;
+    margin-top:150px;
+}
+
+.input_group .input_group_prepend{
+	margin:5px;
+	 
+}
+
+.loginInput{
+    text-align:center;
+    display:block;
+}
+
+._inputArea{
+	margin:10px;
+}
+
+
+.loginSubmit{
+	width: 100px;
+    color: #fff;
+    background: #3a6eaf;
+    
+    cursor: pointer;
+   
+   	border: 0;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    
+    padding:10px;
+    margin-left: 10px;
+}
+
+.loginReset, .joinSubmit {
+	width: 100px;
+    color: #FFF !important;
+    background: #003366;
+    
+    cursor: pointer;
+    
+    border: 0;
+   	border-radius: 3px;
+    margin-bottom: 5px;
+    
+    padding:10px;
+
+}
+
+.loginReset:hover , .loginSubmit:hover, .joinSubmit:hover{
+    background: #666 url("./icon/pattern_12.png");
+}
+
+.login_title{
+    display: inline-block;
+    font-size: 36px;
+    position: relative;
+    font-family: 'IBMPlexSansKR-Medium';
+}
+
+.gradeRadio{
+	 display: inline-block;
+}
+
+
+
+
+
+
